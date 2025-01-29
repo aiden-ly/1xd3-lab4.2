@@ -16,7 +16,13 @@ Sam Scott, McMaster University, 2025
         function addition() {
             var op1 = Math.floor(Math.random() * 200 - 100);
             var op2 = Math.floor(Math.random() * 200 - 100);
-            prompt("What is " + op1 + " + " + op2 + "?");
+            let answer = prompt("What is " + op1 + " + " + op2 + "?");
+            if (parseInt(answer) === (op1 + op2)) {
+                document.getElementById("result").innerHTML = "Correct!";
+            }
+            else {
+                document.getElementById("result").innerHTML = "Inorrect.";
+            }
         }
     </script>
 </head>
