@@ -19,13 +19,18 @@
 
         let input = parseInt(prompt("Enter a positive integer: "));
         let textbox = document.getElementById("target");
-        let ints = "";
+        // let ints = "";
 
 
         for (let i = 1; i <= input; i++) {
-            ints += 
+            textbox.innerHTML = "<p>" + i + "</p>";
+            // ints += i + " ";
         }
-        
+
+        console.log(ints);
+
+
+
 
     </script>
 </head>
