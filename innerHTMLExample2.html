@@ -17,21 +17,19 @@
                 "<p>First paragraph</p><p>Second paragraph</p>";
         }
 
-        let input = parseInt(prompt("Enter a positive integer: "));
-        let textbox = document.getElementById("target");
-        // let ints = "";
+        window.addEventListener("load", function(event) {
+            let input = parseInt(prompt("Enter a positive integer: "));
+            let textbox = document.getElementById("target");
+            textbox.innerHTML = "";
 
 
         for (let i = 1; i <= input; i++) {
-            textbox.innerHTML = "<p>" + i + "</p>";
-            // ints += i + " ";
+            let intParagraph = document.createElement("p");
+            intParagraph.innerHTML = i;
+            textbox.appendChild(intParagraph);
         }
 
-        console.log(ints);
-
-
-
-
+        });
     </script>
 </head>
 
