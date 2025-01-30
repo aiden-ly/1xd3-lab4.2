@@ -29,14 +29,15 @@ Sam Scott, McMaster University, 2025
                 document.getElementById("result").innerHTML = "Correct!";
                 document.getElementById("result").style.color = "green";
                 document.getElementById("result").classList.remove("failure");
-            } else if (isNaN(answer)){
+            } else if (isNaN(answer)) {
                 document.getElementById("result").innerHTML = "Invalid number.";
                 document.getElementById("result").classList.add("failure");
             }
             else {
                 document.getElementById("result").innerHTML = "Incorrect.";
                 document.getElementById("result").style.color = "red";
-            } 
+                document.getElementById("result").classList.remove("failure");
+            }
         }
     </script>
 </head>
